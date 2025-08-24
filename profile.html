@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Or Haibi - Portfolio</title>
+  <link rel="stylesheet" href="profile.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container">
+      <h3 class="name">Or Haibi</h3>
+      <!-- Menu -->
+      <nav class="nav-menu">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Menu for mobile -->
+      <div class="mobile" id="mobile"> ☰ </div>
+          <nav class="mobile-nav hidden">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </nav>
+    </div>
+  </header>
+
+  <!-- First box- general info -->
+  <section class="general-info">
+    <div class="container general-content">
+      <div class="general-text">
+        <h1>Software Developer</h1>
+        <br/>
+         <p>Diligent and ambitious, eager to develop and grow, with high motivation and quick learning ability.</p>
+        <a href="#contact" class="btn">Get in Touch</a>
+      </div>
+      <div class="photo">
+        <div class="photo-wrapper">
+          <img src="\profilePic.jpeg" alt="Profile Photo">
+        </div>
+    </div>
+  </section>
+  
+  <!-- About Me box-->
+  <section id="about" class="about">
+    <div class="container about-content">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p class="highlight">B.Sc. Computer Science graduate and Full Stack Developer Bootcamp graduate with experience building client-server applications, integrating databases and working in team environments.</p>
+        <p class="highlight">Skilled in Python, JavaScript, Java, C, C++, React, NodeJS. Passionate about learning new technologies and improving my skills.</p>
+
+      </div>
+      <div class="skills">
+            <h3>Skills</h3>
+            <p>
+                Python, Java, JavaScript, C, C++, HTML, CSS.
+            </p>
+            <br/>
+            <p>
+                React, NodeJS, MongoDB, PostgreSQL.
+            </p>
+            <br/>
+            <p>
+                Networking: Layers model, Protocols, Routing, Switching, Cookies, HTTP.
+            </p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects box -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="project-list">
+        <!-- Project 1 -->
+        <div class="project">
+          <div class="project-image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcf61Au9OvuhRZ9YnJ8s5ZuO6neUghiDkRJQ&s" alt="TikTok Video">
+          </div>
+          <h3> A model for classifying TikTok videos</h3>
+          <p>A machine learning model that classifies TikTok videos to which terrorist organization they belong based on their content.</p>
+          <a href="https://github.com/Orhai1/FinalProjectModels" target="_blank" class="btn">View Project</a>
+        </div>
+        <!-- Project 2 -->
+        <div class="project">
+          <div class="project-image">
+            <img src="https://www3.minijuegosgratis.com/v3/games/thumbnails/1969_1.jpg" alt="Arkanoid Game">
+          </div>
+          <h3>Arkanoid Game</h3>
+          <p>A classic arcade game built with Java.</p>
+          <a href="https://github.com/Orhai1/Arkanoid-Game" target="_blank" class="btn">View Project</a>
+        </div>
+         <!-- Project 3 -->
+        <div class="project">
+          <div class="project-image">
+            <img src="\GuessItPic.png" alt="GuessIt App">
+          </div>
+          <h3>GuessIt App</h3>
+          <p>An educational and fun quiz platform for kids, with parent-managed content and external API integration.</p>
+          <a href="https://github.com/Orhai1/GuessIt" target="_blank" class="btn">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Contact box -->
+  <section id="contact" class="contact">
+    <div class="container contact-content">
+      <div class="contact-info">
+            <h2>Contact Information</h2>
+            <ul>
+                <li><span class="icon">📧</span> <a href="mailto:orhaibi1@gmail.com">orhaibi1@gmail.com</a></li>
+                <li><span class="icon">📱</span> <a href="tel:+972-544373777">+972-544373777</a></li>
+                <li><span class="icon">📍</span> Givat Shmuel, Center, Israel</li>
+            </ul>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/or-haibi-957053317" target="_blank" class="circle-icon">in</a>
+                <a href="https://github.com/Orhai1" target="_blank" class="circle-icon">🐱</a> 
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Or Haibi. All rights reserved.</p>
+    </div>
+  </footer>
+
+    <!-- JavaScript for mobile menu toggle -->
+  <script>
+  const mobileBtn = document.getElementById("mobile");
+  const mobileNav = document.querySelector(".mobile-nav");
+
+  mobileBtn.addEventListener("click", () => {
+    mobileNav.classList.toggle("hidden");
+  });
+</script>
+  </body>
+</html>

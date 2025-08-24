@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: black;
+  background-color: white;
+}
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Navbar */
+.navbar {
+  background-color: white;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid white;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2rem;;
+}
+.nav-menu a {
+   text-decoration: none;
+}
+
+.nav-menu a:hover {
+  color: #007bff;
+}
+.mobile,
+.mobile-nav {
+  display: none;
+}
+.hidden {
+  display: none;
+}
+
+/* First box- general info*/
+.general-info {
+  background-color: #f0f4fa;
+  padding: 4rem 0;
+  box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.general-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.general-text {
+  flex: 1;
+  min-width: 300px;
+}
+.general-text p {
+  margin-bottom: 2rem;
+}
+.highlight {
+    font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.photo-wrapper {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+/* About box */
+.about {
+  padding: 4rem 0;
+  background-color: white;
+}
+
+.about-content {
+  display: flex;
+  gap: 14rem;
+  flex-wrap: wrap;
+}
+
+.about-text, .skills {
+  flex: 1;
+  min-width: 300px;
+}
+.skills p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Projects box */
+.projects {
+  padding: 4rem 0;
+}
+
+.project-list {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project {
+  flex: 1;
+  min-width: 280px;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.project-image {
+  height: 150px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+
+
+/* Contact box */
+.contact {
+  padding: 4rem 0;
+  background-color: white;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+form {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form input, form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.contact-info .icon {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.circle-icon {
+  width: 48px;
+  height: 48px;
+  background-color: #1a73e8;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.circle-icon:hover {
+  transform: scale(1.15);
+}
+
+
+.footer {
+  padding: 2rem 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Responsive Design for mobile*/
+@media (max-width: 768px) {
+    .nav-menu {
+    display: none;
+  }
+
+   .mobile {
+  display: block;
+  font-size: 1.5rem;
+  cursor: pointer;           
+  border-radius: 8px;     
+}
+
+.mobile:hover {
+  background-color: #e0e0e0;
+}
+
+.mobile-nav:not(.hidden) {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: white;
+  padding: 1rem;
+  position: absolute;
+  top: 70px;
+  right: 1rem;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+  .general-content,
+  .about-content,
+  .contact-content,
+  .project-list {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .general-text {
+    order: 1;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .general-text .btn {
+    margin: 1rem auto 0;
+    display: block;
+  }
+
+  .photo {
+    order: 2;
+    margin-top: 2rem;
+  }
+
+  .photo-wrapper {
+    width: 150px;
+    height: 150px;
+  }
+  .project {
+    width: 100%;
+  }
+  
+}
